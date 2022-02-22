@@ -14,3 +14,41 @@ a {
 * {
   box-sizing: border-box;
 }
+html {
+  overflow: hidden;
+}
+main {
+  background: rgb(17, 17, 17);
+}
+/* Chrome, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #463a3b;
+}
+::-webkit-scrollbar-thumb:vertical  , ::-webkit-scrollbar-thumb:horizontal {
+  height: 30px;
+  background-color: #aa2329;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* padding: 0 16px; */
+}
+.card-paragraph {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
