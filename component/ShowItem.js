@@ -17,6 +17,11 @@ export default function ShowItem({ img, description, title, link }) {
             height: "250px",
             padding: "8px",
             marginRight: "5px",
+            marginTop: "24px",
+            marginBottom: "24px",
+            "&:hover":{
+            background: "rgba(0, 0, 0, 0.5)",
+            }
           }}
         >
           <div

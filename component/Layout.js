@@ -6,7 +6,6 @@ export default function Layout({ children }) {
     <Box
       sx={{
         height: "100vh",
-        background: "maroon",
         width: "100%",
       }}
     >
@@ -16,7 +15,6 @@ export default function Layout({ children }) {
          item
          md={8}
          sx={{
-           background: "pink",
            height: "85vh",
            overflowY: "scroll",
            overFlowY: "hidden",

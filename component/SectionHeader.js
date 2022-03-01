@@ -16,7 +16,7 @@ export default function SectionHeader({ text }) {
         style={{
           width: "80px",
           height: "2px",
-          background: "#aa2329;",
+          background: "#aa2329",
           marginTop: "16px",
         }}
       ></div>
