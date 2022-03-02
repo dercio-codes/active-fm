@@ -2,6 +2,19 @@ import { Box, Grid } from "@mui/material";
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
+
+  const Drawer = () =>{
+    return(
+      <Box sx={{
+        height:'35vh',
+        background:'black',
+        position:'fixed',
+        bottom:0
+      }}>
+
+      </Box>
+    )
+  }
   return (
     <Box
       sx={{
@@ -13,7 +26,8 @@ export default function Layout({ children }) {
       <Grid container >
         <Grid
          item
-         md={8}
+         md={12}
+         lg={8}
          sx={{
            height: "85vh",
            overflowY: "scroll",
@@ -22,11 +36,12 @@ export default function Layout({ children }) {
          }}
         >
             {children}
-
+         <Drawer />
         </Grid>
         <Grid
           item
-          md={4}
+          md={12}
+          lg={4}
           sx={{
             height: "100vh",
             background: "pink",

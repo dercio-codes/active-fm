@@ -10,7 +10,7 @@ export default function ShowItem({ img, description, title, link }) {
     <Link href={link}>
       <a target="_blank">
         <Paper
-          elevation={1}
+          elevation={0}
           sx={{
             background: "rgba(0, 0, 0, 0.1)",
             width: "200px",

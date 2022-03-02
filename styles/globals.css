@@ -19,6 +19,7 @@ html {
 }
 main {
   background: rgb(17, 17, 17);
+  padding:10px 0px;
 }
 /* Chrome, Safari */
 ::-webkit-scrollbar {

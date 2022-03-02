@@ -1,4 +1,4 @@
-import { Typography, Stack } from "@mui/material";
+import { Typography, Stack , Button } from "@mui/material";
 import {
   Instagram,
   YouTube,
@@ -6,6 +6,8 @@ import {
   Spotify,
   Iono,
 } from "@mui/icons-material";
+import Link from "next/link"
+
 export default function Footer() {
   function FooterItem({ field, value }) {
     return (
@@ -34,9 +36,9 @@ export default function Footer() {
     <div
       style={{
         height: "30vh",
-        paddingTop: "16px",
-        paddingLeft: "16px",
-        paddingRight: "16px",
+        // paddingTop: "16px",
+        // paddingLeft: "16px",
+        // paddingRight: "16px",
         fontSize: "16px",
       }}
     >
@@ -70,29 +72,59 @@ export default function Footer() {
             height: "30px",
           }}
         >
+          
+          <Link href="https://www.instagram.com/activefm777/">
+          <a>
           <Instagram />
-          <YouTube />
-          <Facebook />
 
+          </a>
+          </Link>
+          {/*  */}
+          <Link href="https://www.youtube.com/channel/UChNIUx19XJrIOm5UGYAqkYQ">
+          <a>
+            
+          <YouTube />
+          </a>
+          </Link>
+          {/*  */}
+          <Link href="https://www.facebook.com/activefmonlineradio">
+          <a>
+          <Facebook />
+            
+          </a>
+          </Link>
+          {/*  */}
+          <Link href="https://open.spotify.com/show/7IqUjTiAg6jS1tgLcRL6ag">
+          <a>
           <img
             src="https://www.activefm.co.za/icons/spotify-logo.svg"
             alt=""
             width="20px"
             height="30px"
             style={{
-              filter:'brightness(100%)'
+              filter:'invert(1)'
             }}
           />
+            
+          </a>
+          </Link>
+          {/*  */}
+          <Link href="https://podcasts.apple.com/za/podcast/we-are-live/id1478735597">
+          <a>
+            
           <img
             src="https://www.activefm.co.za/icons/podcast.png"
             alt=""
             width="20px"
             height="30px"
              style={{
-              filter:'brightness(100%)',
+              filter:'invert(1)',
               objectFit:'contain'
             }}
           />
+          </a>
+          </Link>
+          
         </div>
         <div   style={{
             display: "flex",

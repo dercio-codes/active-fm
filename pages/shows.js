@@ -2,7 +2,7 @@ import ShowItem from "../component/ShowItem";
 import Footer from "../component/Footer";
 import { useState, useEffect } from "react";
 
-export default function MusicShows() {
+export default function shows() {
   const [shows, setShows] = useState([]);
 
   useEffect(() => {
